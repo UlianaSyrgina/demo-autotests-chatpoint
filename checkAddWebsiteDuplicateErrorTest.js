@@ -11,7 +11,6 @@ const steps = require('./common/steps/steps');
     console.log('Переход по ссылке');
     await page.goto('<<url>>/login');
 
-    console.log('Логинимся под своим пользователем');
     await steps.loginWithGoogleStep(page)
     await steps.clickAddWebSiteStep(page)
     await steps.fillWebsiteFieldAndClickStepFirst(page)
